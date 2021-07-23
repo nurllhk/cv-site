@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Webside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                NK
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="webdunyamda.com">BLOG</a> </li>
+                    <li> <a href="#">ABOUT</a> </li>
+
+                    <li> <a href="#">CONTACT</a> </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <p>Nurullah Kaya</p>
+                <img src="img/profile.jpg" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <img src="img/search.png" class="search-icons" alt="">
+            <div class="social-links">
+                <img src="img/fb.png" alt="">
+                <img src="img/pt.png" alt="">
+                <img src="img/tw.png" alt="">
+            </div>
+        </div>
+        <div class="msg-container">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>Benim Geçmişim</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing Cum ipsam enim, ut rerum esse magnam libero eum eius non ea est nesciunt molestiae inventore autem odio facere. Molestias, enim necessitatibus.</p>
+                    <a href="">Öğren</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Benim özetim</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing Cum ipsam enim, ut rerum esse magnam libero eum eius non ea est nesciunt molestiae inventore autem odio facere. Molestias, enim necessitatibus.</p>
+                    <a href="">Öğren</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Benim hayatım</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing Cum ipsam enim, ut rerum esse magnam libero eum eius non ea est nesciunt molestiae inventore autem odio facere. Molestias, enim necessitatibus.</p>
+                    <a href="">Öğren</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Benim hayallerim</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing Cum ipsam enim, ut rerum esse magnam libero eum eius non ea est nesciunt molestiae inventore autem odio facere. Molestias, enim necessitatibus.</p>
+                    <a href="">Öğren</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contoller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    </div>
+    <script>
+        var slm = document.getElementById('slider');
+        var act = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+
+        line1.onclick = function() {
+            slm.style.transform = 'translateX(-50%)';
+            act.style.top = '0px';
+        }
+
+        line2.onclick = function() {
+            slm.style.transform = 'translateX(-25%)';
+            act.style.top = '80px';
+        }
+
+        line3.onclick = function() {
+            slm.style.transform = 'translateX(-50%)';
+            act.style.top = '160px';
+        }
+
+        line4.onclick = function() {
+            slm.style.transform = 'translateX(-75%)';
+            act.style.top = '240px';
+        }
+    </script>
+
+</body>
+
+</html>
